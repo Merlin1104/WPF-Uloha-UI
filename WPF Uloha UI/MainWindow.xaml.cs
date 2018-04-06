@@ -24,5 +24,21 @@ namespace WPF_Uloha_UI
         {
             InitializeComponent();
         }
+
+        private void SetBlackOutDates()
+        {
+            MonthlyCalendar.BlackoutDates.Add(new CalendarDateRange(
+                new DateTime(2018, 3, 1),
+                new DateTime(2018, 3, 7)
+                ));
+            MonthlyCalendar.BlackoutDates.Add(new CalendarDateRange(
+                new DateTime(2018, 4, 1),
+                new DateTime(2018, 4, 4)
+                ));
+
+
+        }
+
+
     }
 }

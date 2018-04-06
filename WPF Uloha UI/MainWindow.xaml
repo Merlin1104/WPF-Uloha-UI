@@ -5,8 +5,89 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Uloha_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="845.934" Width="1037.333" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <RadialGradientBrush RadiusY="1" GradientOrigin="0.5,0" Center="0.5,0.5" RadiusX="0.4">
+            <GradientStop Color="#FF134976"/>
+            <GradientStop Color="#FF04ACAD" Offset="1"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid Margin="0,0,-6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" Margin="25,31,0,0" VerticalAlignment="Top" Width="932" Background="#FF66B0D3">
+            <Button Content="&#xD;&#xA;+&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" FontWeight="Bold" BorderBrush="#FF72B7D6" BorderThickness="0,0,1,0" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Button Content="&#xD;&#xA;About&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" Margin="202,0,0,0" BorderBrush="#FF72B7D6" BorderThickness="1,0" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Button Content="&#xA;Services&#xA;" HorizontalAlignment="Right" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" Margin="0,0,528,0" BorderBrush="#FF72B7D6" BorderThickness="1,0" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Button Content="&#xA;Portfolio&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" Margin="404,0,0,0" BorderBrush="#FF72B7D6" BorderThickness="1,0" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Button Content="&#xA;Blog&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" Margin="505,0,0,0" BorderBrush="#FF72B7D6" BorderThickness="1,0" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Button Content="&#xD;&#xA;Contact&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" Margin="606,0,0,0" BorderBrush="#FF72B7D6" BorderThickness="1,0" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Button Content="&#xD;&#xA;Home&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Height="100" Background="{x:Null}" FontSize="22" Margin="101,0,0,0" BorderBrush="#FF72B7D6" RenderTransformOrigin="-0.937,0.494" BorderThickness="1,0" FontFamily="Bahnschrift Light" Foreground="White"/>
+        </Grid>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="61,70,0,0" TextWrapping="Wrap" Text="Search the Web" VerticalAlignment="Top" Width="189" RenderTransformOrigin="-0.319,-0.258" FontSize="16" BorderThickness="1" ClipToBounds="True" Background="#FF4B9DC2" BorderBrush="{x:Null}" FontFamily="Bahnschrift Light" Padding="2,1" Grid.IsSharedSizeScope="True" CaretBrush="Black"/>
+        <Calendar Grid.Column="2" Margin="71,157,101,0" VerticalAlignment="Top" Height="169" DisplayMode="Month" SelectionMode="SingleRange" Name="MonthlyCalendar">
+            <Calendar.BlackoutDates>
+                <CalendarDateRange Start="3/1/2018" End="3/7/2018"/>
+                <CalendarDateRange Start="4/1/2018" End="4/4/2018"/>
+            </Calendar.BlackoutDates>
+            <Calendar.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+                    <GradientStop Color="Blue" Offset="0.1" />
+                    <GradientStop Color="Orange" Offset="0.25" />
+                    <GradientStop Color="Green" Offset="0.75" />
+                    <GradientStop Color="Red" Offset="1.0" />
+                </LinearGradientBrush>
+            </Calendar.Background>
+
+            <Calendar.Foreground>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+                    <GradientStop Color="Black" Offset="0.25" />
+                    <GradientStop Color="Green" Offset="1.0" />
+                </LinearGradientBrush>
+            </Calendar.Foreground>
+        </Calendar>
+        <Grid ShowGridLines="True" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="252" Margin="25,157,0,0" VerticalAlignment="Top" Width="361" Background="#3ABEC0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Mostly Sunny" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+            <TextBlock Text="Mostly Sunny" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="left"></TextBlock>
+            <TextBlock Text="Random City" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="left"></TextBlock>
+            <TextBlock Text=" Tu by som chcel Columns" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBox HorizontalAlignment="Left" Height="25" Margin="210,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" RenderTransformOrigin="-0.319,-0.258" FontSize="16" BorderThickness="1" ClipToBounds="True" Background="#309BA1" BorderBrush="{x:Null}" FontFamily="Bahnschrift Light" Padding="2,1" Grid.IsSharedSizeScope="True" CaretBrush="Black" Grid.Row="1" />
+
+        </Grid>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="340" Margin="443,157,0,0" VerticalAlignment="Top" Width="228" Background="#FFEBC95E">
+            <TextBlock Text="Antonio Banderas" HorizontalAlignment="Center" Margin="66,33,67,0"></TextBlock>
+            <TextBlock Text="Ucitel Hudby" HorizontalAlignment="Center" Margin="80,49,80,0"></TextBlock>
+            <TextBlock Text="1.7M followers" HorizontalAlignment="Center" Margin="76,226,67,0" Width="85"></TextBlock>
+            <Image HorizontalAlignment="Center" Height="109" Margin="69,92,68,139" VerticalAlignment="Center" Width="91" Source="Fotka/fotka teepek.png" RenderTransformOrigin="0.478,0.495"/>
+            <Button Content="Follow" HorizontalAlignment="Left" Margin="35,283,0,0" VerticalAlignment="Top" Width="151" Background="#FFA48C60" FontSize="22" BorderThickness="0" Height="37"  />
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="100" Margin="25,456,0,0" VerticalAlignment="Top" Width="361" Background="#FF4AD486">
+            <Button Width="90" Background="#FF4AD486" BorderBrush="{x:Null}" Content="Obrazok"/>
+            <Button Width="90" Background="#FF4AD486" BorderBrush="{x:Null}" Content="Obrazok"/>
+            <Button Width="90" Background="#FF4AD486" BorderBrush="{x:Null}" Content="Obrazok"/>
+            <Button Width="90" Content="Obrazok" Background="#FF4AD486" BorderBrush="{x:Null}"/>
+            <StackPanel Width="100"/>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="200" Margin="443,521,0,0" VerticalAlignment="Top" Width="228">
+            <Button Height="50" Content="Sort by filter" HorizontalContentAlignment="Left" Padding="10 0 0 0" Background="#FF67B0D1" Foreground="White" FontFamily="Bahnschrift Light"></Button>
+            <Button Height="50" Content="Date" HorizontalContentAlignment="Left" Padding="10 0 0 0" FontFamily="Bahnschrift Light" Background="#FFFFFF"></Button>
+            <Button Height="50" Content="Popularity" HorizontalContentAlignment="Left" Padding="10 0 0 0" FontFamily="Bahnschrift Light" Background="#FFFFFF"></Button>
+            <Button Height="50" Content="Price" HorizontalContentAlignment="Left" Padding="10 0 0 0" FontFamily="Bahnschrift Light" Background="#FFFFFF"></Button>
+            <StackPanel/>
+        </StackPanel>
+        <Button Content="&lt;" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="286,598,0,0" VerticalAlignment="Top" Width="50" Height="40" Foreground="Gray" FontWeight="Bold" Background="White" FontSize="16" BorderThickness="0"/>
+        <Button Grid.ColumnSpan="2" Content="&gt;" HorizontalAlignment="Left" Margin="336,598,0,0" VerticalAlignment="Top" Width="50" Height="40" Background="#FFE87352" Foreground="White" FontWeight="Bold" FontSize="16" BorderThickness="0"/>
+        <Button Content="+" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="286,643,0,0" VerticalAlignment="Top" Width="50" Height="40" Background="#FF38C0BE" Foreground="White" FontWeight="Bold" FontSize="16" BorderThickness="0"/>
+        <Button Grid.ColumnSpan="2" Content="-" HorizontalAlignment="Left" Margin="336,643,0,0" VerticalAlignment="Top" Width="50" Height="40" Foreground="Gray" FontWeight="Bold" Background="White" FontSize="16" BorderThickness="0"/>
+
+
     </Grid>
 </Window>
